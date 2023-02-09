@@ -383,4 +383,28 @@ form .name-details .field:last-child{
     background: #eceaea;
     height: 50px;
     align-items: center;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.type-area .message-txt{
+    width: calc(100% - 50px);
+}
+.type-area .message-txt{
+    display: flex;
+    background: #eceaea;
+    height: 100%;
+    align-items: center;
+    border-radius: 0 0 0 5px;
+}
+
+.message-txt input{
+    height: 80%;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid #676767;
+    font-size: 17px;
+    padding: 0 0 0 20px;
 }
