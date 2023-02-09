@@ -312,6 +312,10 @@ form .name-details .field:last-child{
     padding: 20px 30px 20px 30px;
     box-shadow: inset 0 32px 32px -32px rgba(0 0 0 /5%),
                 inset 0 -32px 32px -32px rgba(0 0 0 /5%);
+    overflow-y: auto;
+}
+.chat-box::-webkit-scrollbar{
+    width: 0;
 }
 
 .chat-box .chat{
@@ -331,6 +335,10 @@ form .name-details .field:last-child{
 .chat-box .outgoing + .incoming,
 .chat-box .incoming + .outgoing{
     margin-top: 20px;
+}
+
+.chat-box .incoming + .incoming img{
+    opacity: 0;
 }
 .outgoing .details{
     margin-left: auto;
