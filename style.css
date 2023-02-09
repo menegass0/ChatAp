@@ -6,6 +6,8 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;  
 }
+
+
 body{
    display: flex;
    align-items: center;
@@ -13,6 +15,8 @@ body{
    min-height: 100vh; 
    background: #74c69d;
 }
+
+
 .wrapper{
     background: #fff;
     width: 450px;
@@ -20,19 +24,26 @@ body{
     box-shadow: 0 0 120px 0 rgba(0,0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
+
 .form{
     padding: 25px 30px;
 }
+
+
 .form header{
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 10px;
     border-bottom: 1px solid #e6e6e6;
 }
+
+
 .form form{
     margin: 20px 0;
 
 }
+
+
 .form form .error-txt{
     color: #721c24;
     background: #f8d7da;
@@ -42,28 +53,41 @@ body{
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
 }
+
+
 .form form .name-details{
     display: flex;
 }
+
+
 form .name-details .field:first-child{
     margin-right: 10px;
 }
+
+
 form .name-details .field:last-child{
     margin-left: 10px;
 }
+
+
 .form form .field{
     display: flex;
     position: relative;
     flex-direction: column;
     margin-bottom: 10px;
 }
+
+
 .form form .field label{
     margin-bottom: 2px;
 }
+
+
 .form form .field input{
     outline: none;
 
 }
+
 
 .form form .input input{
     height: 40px;
@@ -73,9 +97,13 @@ form .name-details .field:last-child{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+
 .form form .image input{
     font-size: 17px;
 }
+
+
 .form form .button input{
     margin-top: 13px;
     height: 45px;
@@ -87,6 +115,8 @@ form .name-details .field:last-child{
     border-radius: 5px;
     cursor: pointer;
 }
+
+
 .form form .field i{
     position: absolute;
     right: 15px;
@@ -95,47 +125,72 @@ form .name-details .field:last-child{
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+
 .form .link{
     text-align: center;
     margin: 10px 0;
     font-size: 17px;
 }
+
+
 .form .link a{
     color: #081C15;
 }
+
+
 .form .link a:hover{
     text-decoration: underline;
 }
 
 
 /* Users area css */
-
+/* ///////////////////////////////////////////////////////////////////////////////// */
 .users{
     padding: 25px 30px;
-
 }
-.users header{
+
+
+.users header,
+.users-list a{
     display: flex;
     align-items: center;
     padding-bottom: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #B7E4C7;
 }
+
+
 .wrapper img{
     object-fit: cover;
     border-radius: 50%;
 }
-.users header .content{
+
+
+:is(.users, .users-list) .content{
     display: flex;
+    align-items: center;
 }
+
+
 .users header .content img{
     height:50px;
     width: 50px;
 }
-.users header .details span{
+
+
+:is(.users, .users-list) .details {
+    color: #000;
+    margin-left: 15px;
+}
+
+
+:is(.users, .users-list) .details span{
     font-size: 18px;
     font-weight: 500;
 }
+
+
 .users header .logout{
     color: #fff;
     font-size: 17px;
@@ -143,6 +198,8 @@ form .name-details .field:last-child{
     background: #081C15;
     border-radius: 5px;
 }
+
+
 .users .search{
     margin: 20px 0;
     display: flex;
@@ -151,9 +208,13 @@ form .name-details .field:last-child{
     justify-content: space-between;
 
 }
+
+
 .users .search .text{
     font-size: 18px;
 }
+
+
 .users .search input{
     position: absolute;
     height: 42px;
@@ -165,6 +226,8 @@ form .name-details .field:last-child{
     outline: none;
 
 }
+
+
 .users .search button{
     width: 47px;
     height: 42px;
@@ -175,4 +238,40 @@ form .name-details .field:last-child{
     cursor: pointer;
     font-size: 17px;
     border-radius: 0 5px 5px 0; 
+}
+
+
+.users-list{
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.users-list::-webkit-scrollbar{
+    width: 0px;
+}
+.users-list a{
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom-color: #B7E4C7;
+}
+.users-list a:last-child{
+    border:none;
+    margin-bottom: 0px;
+}
+
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a .content p{
+    color: #676767;
+}
+
+.users-list a .status-dot{
+    font-size: 12px;
+    color: #2D6A4F;
+}
+.users-list a .status-dot.offline{
+    color: #ccc;
 }
