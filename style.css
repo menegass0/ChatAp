@@ -106,3 +106,22 @@ form .name-details .field:last-child{
 .form .link a:hover{
     text-decoration: underline;
 }
+
+
+/* Users area css */
+
+.users{
+    padding: 25px 30px;
+
+}
+.users header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #B7E4C7;
+}
+.users header .content img{
+    height:50px;
+    width: 50px;
+}
