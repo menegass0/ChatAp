@@ -303,16 +303,33 @@ form .name-details .field:last-child{
     font-weight: 500;
 }
 
+
+/* chat-box area */
+
 .chat-box{
     height: 500px;
     background: #eceaea;
     padding: 10px 30px 20px 30px;
-    box-shadow: inset 0 32px 32px -32px rgba(0, 0, 0 /5%),
-                inset 0 -32px 32px -32px rgba(0, 0, 0 /5%);
+    box-shadow: inset 0 32px 32px -32px rgba(0 0 0 /5%),
+                inset 0 -32px 32px -32px rgba(0 0 0 /5%);
 }
+
+
+.chat-box .chat p{
+    padding:  8px 16px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+                0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
 .chat-box .outgoing{
     display: flex;
 }
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
 .outgoing .details p{
     background: #74C69D;
+    color: #000;
+    border-radius: 18px 18px 0 18px;
 }
