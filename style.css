@@ -163,6 +163,16 @@ form .name-details .field:last-child{
     font-size: 16px;
     border-radius: 5px;
     outline: none;
-    
-}
 
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #081C15;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 0 5px 5px 0; 
+}
