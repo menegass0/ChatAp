@@ -338,7 +338,7 @@ form .name-details .field:last-child{
 }
 
 .chat-box .incoming + .incoming img{
-    opacity: 0;
+    visibility: hidden;
 }
 .outgoing .details{
     margin-left: auto;
