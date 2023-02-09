@@ -275,3 +275,16 @@ form .name-details .field:last-child{
 .users-list a .status-dot.offline{
     color: #ccc;
 }
+
+/* /////////////////////////////////////////////////////////// */
+/* chat area */
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+.chat-area header img{
+    height: 45px;
+    width: 45px;
+}
