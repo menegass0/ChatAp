@@ -333,3 +333,16 @@ form .name-details .field:last-child{
     color: #000;
     border-radius: 18px 18px 0 18px;
 }
+
+.chat-box .incoming{
+    display: flex;
+    align-items: center;
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+}
+.chat-box .incoming p{
+    color: #333;
+    background: #fff;
+}
