@@ -309,13 +309,17 @@ form .name-details .field:last-child{
 .chat-box{
     height: 500px;
     background: #eceaea;
-    padding: 10px 30px 20px 30px;
+    padding: 20px 30px 20px 30px;
     box-shadow: inset 0 32px 32px -32px rgba(0 0 0 /5%),
                 inset 0 -32px 32px -32px rgba(0 0 0 /5%);
 }
 
+.chat-box .chat{
+    margin: 3px 0;
+}
 
 .chat-box .chat p{
+    word-wrap: break-word;
     padding:  8px 16px;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%),
                 0 16px 16px -16px rgb(0 0 0 / 10%);
@@ -329,20 +333,26 @@ form .name-details .field:last-child{
     max-width: calc(100% - 130px);
 }
 .outgoing .details p{
-    background: #74C69D;
     color: #000;
+    background: #74C69D;
     border-radius: 18px 18px 0 18px;
 }
 
 .chat-box .incoming{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 .chat-box .incoming img{
     height: 35px;
     width: 35px;
 }
-.chat-box .incoming p{
+.incoming .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 130px);
+}
+.incoming .details p{
     color: #333;
     background: #fff;
+    border-radius:18px 18px 18px 0;
 }
