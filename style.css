@@ -372,3 +372,15 @@ form .name-details .field:last-child{
     background: #fff;
     border-radius:18px 18px 18px 0;
 }
+
+
+
+/* type-area */
+/* ///////////////////////////////////////////////////////////// */
+
+.type-area{
+    display: flex;
+    background: #eceaea;
+    height: 50px;
+    align-items: center;
+}
