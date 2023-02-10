@@ -380,6 +380,7 @@ form .name-details .field:last-child{
 
 .type-area{
     display: flex;
+    position: relative;
     background: #eceaea;
     height: 50px;
     align-items: center;
@@ -388,10 +389,8 @@ form .name-details .field:last-child{
 }
 
 .type-area .message-txt{
-    width: calc(100% - 50px);
-}
-.type-area .message-txt{
     display: flex;
+    width: 100%;
     background: #eceaea;
     height: 100%;
     align-items: center;
@@ -411,8 +410,10 @@ form .name-details .field:last-child{
 }
 
 .type-area button{
-    height: 40px;
-    width: 40px;
+    position: absolute;
+    right: 18px;
+    height: 35px;
+    width: 35px;
     background: #74C69D;
     border: 1px solid #52B788;
     border-radius: 50%;
