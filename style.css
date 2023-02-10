@@ -246,7 +246,7 @@ form .name-details .field:last-child{
     overflow-y: auto;
 }
 
-.users-list::-webkit-scrollbar{
+:is(.users-list, .chat-box)::-webkit-scrollbar{
     width: 0px;
 }
 .users-list a{
@@ -314,9 +314,6 @@ form .name-details .field:last-child{
                 inset 0 -32px 32px -32px rgba(0 0 0 /5%);
     overflow-y: auto;
 }
-.chat-box::-webkit-scrollbar{
-    width: 0;
-}
 
 .chat-box .chat{
     margin: 3px 0;
@@ -371,4 +368,14 @@ form .name-details .field:last-child{
     color: #333;
     background: #fff;
     border-radius:18px 18px 18px 0;
+}
+
+
+/* message input area */
+/* ///////////////////////////////////////////////////// */
+
+.chat-area .typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
 }
