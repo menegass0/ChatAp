@@ -211,7 +211,6 @@ form .name-details .field:last-child{
     position: relative;
     align-items: center;
     justify-content: space-between;
-
 }
 
 
@@ -229,7 +228,14 @@ form .name-details .field:last-child{
     font-size: 16px;
     border-radius: 5px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;   
+}
 
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
