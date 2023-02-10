@@ -17,25 +17,25 @@
                 <div class="name-details">
                     <div class="field input">
                         <label>First Name</label>
-                        <input type="text" placeholder="Jaozin">
+                        <input type="text" name="fname" placeholder="Jaozin" required>
                     </div>
                     <div class="field input">
                         <label>last Name</label>
-                        <input type="text" placeholder="Farofa">
+                        <input type="text" name="lname" placeholder="Farofa" required>
                     </div>
                 </div>
                 <div class="field input">
                     <label >Email Address</label>
-                    <input type="text" placeholder="jaozin@example.com">
+                    <input type="text" name="email" placeholder="jaozin@example.com" required>
                 </div>
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" placeholder="segredo123">
+                    <input type="password" name="password" placeholder="segredo123" required>
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
                     <label>Select Image</label>
-                    <input type="file">
+                    <input type="file" name="image" required>
                 </div>
                 <div class="field button">
                     <input type="submit" value="Continue to Chat">
