@@ -17,20 +17,20 @@
                 <div class="name-details">
                     <div class="field input">
                         <label>First Name</label>
-                        <input type="text" name="fname" placeholder="Jaozin" required>
+                        <input type="text" name="fname" placeholder="Jaozin">
                     </div>
                     <div class="field input">
                         <label>last Name</label>
-                        <input type="text" name="lname" placeholder="Farofa" required>
+                        <input type="text" name="lname" placeholder="Farofa">
                     </div>
                 </div>
                 <div class="field input">
                     <label >Email Address</label>
-                    <input type="text" name="email" placeholder="jaozin@example.com" required>
+                    <input type="text" name="email" placeholder="jaozin@example.com">
                 </div>
                 <div class="field input">
                     <label>Password</label>
-                    <input type="password" name="password" placeholder="segredo123" required>
+                    <input type="password" name="password" placeholder="segredo123">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
