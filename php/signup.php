@@ -54,6 +54,6 @@
             echo "$email - This is not a valid email address";
         }
     }else{
-        echo "All input field are required";
+        echo "All input field are required!";
     }
 ?>
