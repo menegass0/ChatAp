@@ -1,14 +1,15 @@
 const form = document.querySelector(".typing-area"),
 inputField = form.querySelector(".input-field"),
-sendBtn = form.querySelector("button");
+sendBtn = form.querySelector("button"),
+chatBox = document.querySelector(".chat-box");
 
 form.onsubmit = (e)=>{
-    e.preventDefault;
+    e.preventDefault();
 }
 
 sendBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "php/chat.php", true);
+    xhr.open("POST", "php/insert-chat.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState === XMLHttpRequest.DONE){
             inputField.value = "";
@@ -20,16 +21,15 @@ sendBtn.onclick = ()=>{
 
 setInterval(()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "php/users.php", true);
+    xhr.open("POST", "php/get-chat.php", true);
     xhr.onload = ()=>{
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 let data = xhr.response;
-                if(!searchBar.classList.contains("active")){
-                    usersList.innerHTML = data;
-                }
+                chatBox.innerHTML = data;
             }
         }
     }
-    xhr.send();
+    let formData = new FormData(form);
+    xhr.send(formData);
 }, 500);
