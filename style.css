@@ -11,14 +11,15 @@
 body{
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    min-height: 100vh; 
    background: #74c69d;
 }
 
 
 .wrapper{
-    background: #fff;
+    background: #fff
+    ;
     width: 450px;
     border-radius: 5px;
     box-shadow: 0 0 120px 0 rgba(0,0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -419,3 +420,14 @@ form .name-details .field:last-child{
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
+
+
+/* ///////////////////////////////////////////////////// */
+/* social-tab */
+/* .social{
+    display: flex;
+    height: 600px;
+    width: 25%;
+    background: #fff;
+    align-self: flex-end;
+} */
