@@ -37,11 +37,11 @@
         </section>
     </div>
 
-    <!-- <div class="social-tab">
+    <div class="social-tab">
         <header>
 
         </header>
-    </div> -->
+    </div>
 
     <script src="javascript/users.js"></script>
 

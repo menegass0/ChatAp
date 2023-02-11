@@ -11,15 +11,14 @@
 body{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    min-height: 100vh; 
    background: #74c69d;
 }
 
 
 .wrapper{
-    background: #fff
-    ;
+    background: #fff;
     width: 450px;
     border-radius: 5px;
     box-shadow: 0 0 120px 0 rgba(0,0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
@@ -424,10 +423,34 @@ form .name-details .field:last-child{
 
 /* ///////////////////////////////////////////////////// */
 /* social-tab */
-/* .social{
+.social-tab{
     display: flex;
-    height: 600px;
-    width: 25%;
+    position: absolute;
+    right: 40px;
+    height: 450px;
     background: #fff;
-    align-self: flex-end;
-} */
+    height: px;
+    width: 25%;
+    align-self: center;
+}
+
+
+@media(max-width: 1200px){
+    body{
+        flex-direction: column;
+    }
+    .social-tab{
+        position: relative;
+        margin-top: 50px;
+        right: 0;
+        width: 450px;
+    }
+}
+@media(max-width: 600px){
+    .wrapper{
+        width: 100%;
+    }
+    .social-tab{
+        width: 100%;
+    }
+}
