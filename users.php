@@ -32,16 +32,7 @@
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
-                    <div class="content">
-                        <img src="pato.jpg" alt="">
-                        <div class="details">
-                            <span>Antedeguemon</span>
-                            <p>This is test message</p>
-                        </div>
-                    </div>
-                    <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+                
             </div>
         </section>
     </div>
